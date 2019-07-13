@@ -10,18 +10,18 @@ class MainView : View() {
     private val layout: BorderPane by fxid("layout")
     private val header: VBox by fxid("header")
     private val systemInfoView = SystemInfoView()
-    private val diskInfoView = DiskInfoView()
-    private val fileDetailView = FileDetailView()
-    private val fileListView = FileListView()
+    private val storageInfoView = StorageInfoView()
+    private val entityInfoView = EntityInfoView()
+    private val entityListView = EntityListView()
     val model: MainViewModel = MainViewModel()
 
     init {
         header.children.addAll(
             systemInfoView.root,
-            diskInfoView.root,
-            fileDetailView.root
+            storageInfoView.root,
+            entityInfoView.root
         )
-        layout.center = fileListView.root
+        layout.center = entityListView.root
     }
 }
 
