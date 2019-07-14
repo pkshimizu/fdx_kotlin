@@ -1,11 +1,12 @@
-package net.noncore.fdx.io.file
+package net.noncore.fdx.stores.file
 
+import net.noncore.fdx.stores.Entity
 import java.nio.file.attribute.FileTime
 import java.time.ZoneId
 import java.io.File as JavaFile
 import java.time.ZonedDateTime
 
-interface FileResource {
+interface FileResource : Entity {
     val path: Path
     val parent: Folder?
     val readable: Boolean
