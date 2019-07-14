@@ -1,4 +1,4 @@
-package net.noncore.fdx.stores.file
+package net.noncore.fdx.stores.io.file
 
 import net.noncore.fdx.stores.Entity
 import java.io.File as JavaFile
